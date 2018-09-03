@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Land Chain</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class="msg">hello</div>
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="#">
+            AutoFax
+          </a>
+        </li>
+
+        <li>
+          <a href="#" id="nav-1">Get History By Vin</a>
+        </li>
+        <li>
+
+
+        <li>
+          <a href="#" id="nav-2">Set Maintanence</a>
+        </li>
+        </li>
+
+        <li>
+      </ul>
+    </nav>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper" class="fadeIn">
+      <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+        <span class="hamb-top"></span>
+        <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+      </button>
+      <div class="container welcome">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h1>Welcome To AutoFax</h1>
+          </div>
+        </div>
+        <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple60/v4/c8/ba/a0/c8baa031-c5e9-a6c8-f945-ae102fbc1ff0/source/512x512bb.jpg" alt="" id="hero">
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+
+  <div class="container">
+
+      <div id="content-1" class="fadeIn">
+          <div class="mm-5">
+            <h3>Enter VIN to Get History</h3>
+            <div class="form-group">
+              <label for="vin-key">Enter VIN</label>
+              <input type="text" class="form-control" id="vin-key" placeholder="VIN">
+            </div>
+            </div>
+
+
+            <button class="btn btn-primary get-history">
+              Get History
+            </button>
+          </div>
+          <div id="slideContainer">
+            <ul id="all-data" class="list-group"></ul>
+          </div>
+      </div>
+
+    </div>
+
+    <div id="content-2" class="fadeIn ">
+
+      <div class="first-form mm-5 ">
+        <h3>Submit Maintanence Record</h3>
+     
+        <div class="form-group">
+            <label for="owner-key">Enter Owner ID</label>
+            <input type="text" class="form-control" id="owner-key" placeholder="Owner">
+          </div>
+          <div class="form-group">
+              <label for="vin-key">Enter VIN here</label>
+              <input type="text" class="form-control" id="vin-key" placeholder="VIN">
+            </div>
+
+            <div class="form-group">
+                <label for="main-key">Maintanence Description</label>
+                <input type="text" class="form-control" id="main-key" placeholder="Maintanence">
+              </div>
+
+              <div class="form-group">
+                  <label for="milage-key">Enter Milage</label>
+                  <input type="text" class="form-control" id="milage-key" placeholder="Milage">
+                </div>
+
+        <button class="btn btn-primary set-maintance">
+          Save
+        </button>
+      </div>
+
+      
+    </div>
+  </div>
+  <!-- /#wrapper -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+
+</html>
